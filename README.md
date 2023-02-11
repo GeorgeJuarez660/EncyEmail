@@ -1,1 +1,1 @@
-# NewsEmail
+# EncyEmail
