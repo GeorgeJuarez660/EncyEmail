@@ -43,6 +43,7 @@ div{
     font-family: 'Jaldi', sans-serif; 
     font-weight: lighter;
     font-size: 24px;
+    padding: 10px;
 }
 
 .LR_condition div div a button{
