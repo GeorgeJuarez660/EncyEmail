@@ -10,6 +10,22 @@ div{
     text-align: center;
 }
 
+/*CSS of Clock*/
+
+header .clock_display {
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 70px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 7px;
+}
+
+/*CSS of LR_condition*/
+
 .macro-piece #title{
     background-color: transparent;
     position: relative;
