@@ -22,3 +22,9 @@ body{
     font-weight: bolder;
     font-size: 30px;
 }
+
+.macro-piece .LR_condition{
+    width: 500px;
+    height: 700px;
+    background: linear-gradient(to bottom);
+}
