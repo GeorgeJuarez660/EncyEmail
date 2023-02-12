@@ -6,6 +6,10 @@ body{
     background-attachment: fixed;
 }
 
+div{
+    text-align: center;
+}
+
 .macro-piece #title{
     background-color: transparent;
     position: relative;
@@ -35,19 +39,12 @@ body{
 }
 
 .LR_condition .login_condition p{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     font-size: 24px;
     color: white;
     font-family: 'Jaldi', sans-serif;
 }
 
 .LR_condition .register_condition p{
-    position: absolute;
-    top: 7em;
-    left: 50%;
-    transform: translate(-50%);
     font-size: 24px;
     color: white;
     font-family: 'Jaldi', sans-serif;
