@@ -9,6 +9,9 @@ body{
     background-color: transparent;
     position: relative;
     top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    width:850px;
     padding: 10px;
     text-align: center;
 }
