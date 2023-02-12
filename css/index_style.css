@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
 
 body{
     background-image: url("/images/ency.png");
@@ -31,4 +32,23 @@ body{
     height: 317px;
     background-image: linear-gradient(to bottom, #8290DA, #091345 100%);
     border-radius: 15px;
+}
+
+.LR_condition .login_condition p{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    color: white;
+    font-family: 'Jaldi', sans-serif;
+}
+
+.LR_condition .register_condition p{
+    position: absolute;
+    top: 7em;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    color: white;
+    font-family: 'Jaldi', sans-serif;
 }
