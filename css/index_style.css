@@ -38,14 +38,28 @@ div{
     border-radius: 15px;
 }
 
-.LR_condition .login_condition p{
-    font-size: 24px;
+.LR_condition div #cond{
     color: white;
-    font-family: 'Jaldi', sans-serif;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
 }
 
-.LR_condition .register_condition p{
+.LR_condition div div a button{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+a button p{
+    color: #3D498A;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
     font-size: 24px;
-    color: white;
-    font-family: 'Jaldi', sans-serif;
+    margin: 0 auto;
 }
