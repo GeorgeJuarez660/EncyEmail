@@ -2,3 +2,18 @@ body{
     background-image: url("/images/ency.png");
     background-attachment: fixed;
 }
+
+.macro-piece #title{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+#title h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
