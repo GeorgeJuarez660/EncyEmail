@@ -53,7 +53,7 @@ class WishList(db.Model):
    description = db.Column(db.String(200))
    user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
 
-   def __repr__(self):
+def __repr__(self):
         return f"Wishlist('{self.name}', '{self.description}', '{self.user_id}')"
 
 
@@ -90,10 +90,6 @@ class WishListForm(FlaskForm):
       description = StringField('Descrizione')
 
       submit = SubmitField('Creazione Wishlist')
-
-
-wishlist = WishList.query.filter_by(id=1).first()
-user = WishList.user
 
 @app.route('/')
 def index():
