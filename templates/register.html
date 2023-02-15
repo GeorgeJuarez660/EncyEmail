@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/register_style.css">
+    <title>Register Page</title>
+</head>
+<body>
+    <div class="macro-piece">
+        <header id="title">
+            <h1>Registrati e potrai consultare le definizioni, ovvero, voci informative o critiche e inviare delle email agli utenti</h1>
+        </header>
+        <div class="register_form">
+            <div class="writing">
+                <p>Inserisci i campi obbligatori</p>
+             </div>
+             <form method="POST" action="{{ request.path }}">
+                {{form.hidden_tag()}}
+                {% if request.path == '/register' %}
+                <div class="text_name">
+                    {{form.name}}
+                </div>
+                <div class="text_surname">
+                    {{form.surname}}
+                </div>
+                <div class="text_email">
+                    {{form.email}}
+
+                </div>
+                <div class="text_username">
+                    {{form.username}}
+
+                </div>
+                <div class="text_pwd">
+                    {{form.password}}
+
+                </div>
+                <div class="conf_pwd">
+                    {{form.conf_password}}
+                </div>
+
+                <div class="button">
+                    {{form.submit}}
+                </div>
+            </div>
+            <div class="caution">
+                <div class="warn_title">
+                    <p>Qui sono riportati i seguenti errori nel caso la registrazione non va a buon fine:</p>
+                </div>
+                <div class="error1">
+                    {% for error in form.email.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error2">
+                    {% for error in form.username.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error3">
+                    {% for error in form.password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error4">
+                    {% for error in form.conf_password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                  <div class="error5">
+                      {% for error in form.name.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+                  <div class="error6">
+                      {% for error in form.surname.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+            </div>
+            {% endif%}
+            </form>
+        </div>
+    </div>
+</body>
+</html>
