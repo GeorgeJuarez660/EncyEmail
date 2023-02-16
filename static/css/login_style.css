@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+body{
+    background-image: url("/static/images/ency.png");
+    background-attachment: fixed;
+}
+
+div{
+    text-align: center;
+}
+
+/*CSS of login_form*/
+
+.macro-piece #title{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    width:850px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title h1{
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.macro-piece .login_form{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 418px;
+    height: 487px;
+    background-image: linear-gradient(to bottom, #8290DA, #091345 100%);
+    border-radius: 15px;
+}
+
+.login_form div #cond{
+    color: white;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.login_form form #submit{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #3D498A;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.login_form form #username{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid rgb(172, 181, 219);
+    background-color: transparent;
+    color: rgb(221, 223, 232);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: text;
+}
+.login_form form #username::placeholder{
+    color: rgb(172, 181, 219);
+}
+
+.login_form form #password{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid rgb(172, 181, 219);
+    color: rgb(221, 223, 232);
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: text;
+}
+.login_form form #password::placeholder{
+    color: rgb(172, 181, 219);
+}
+
+.login_form .writing p{
+    color: white;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/*CSS of Caution*/
+
+.caution{
+    position: absolute;
+    width: 310px;
+    left: 70%;
+    top: 22%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid rgb(172, 181, 219);
+    border-radius: 15px;
+}
+
+.caution .caut_title p{
+    color: rgb(221, 223, 232);
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.caution .error{
+    color: #de5d4c;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.orRegister p{
+    color: rgb(221, 223, 232);
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center; 
+}
+
+/*CSS of orRegister*/
+
+.orRegister p .link{
+    color: rgb(221, 223, 232);;
+    text-decoration: none;
+}
+.orRegister p .link:hover{
+    color: rgb(172, 181, 219);
+}
+
+a{
+    cursor: pointer;
+}
+
+/*CSS of Come Back*/
+
+img#cBack{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.come_back #cBack{
+    position: absolute;
+    float: left;
+    top:42px;
+    left:60px;
+}
