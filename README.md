@@ -6,7 +6,7 @@
 
 Before starting it, make sure you have the latest version of Python installed and you need to install the *requirements* and you write like this from the terminal:
 
-```pip install -r requirements.txt ```
+```pip install -r requirements.txt```
 
 
 If you have installed the requirements, now you can start the project by writing like this from the terminal:
