@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login_style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="come_back">
+        <a href="{{url_for('index')}}"><img src="/static/images/come_back.png" alt="Come_Back" id="cBack"></a>
+    </div>
+    <div class="macro-piece">
+        <header id="title">
+            <h1>Accedi e potrai consultare le definizioni, ovvero, voci informative o critiche e inviare delle email agli utenti</h1>
+        </header>
+        <div class="login_form">
+             <div class="writing">
+                <p>Inserisci i campi obbligatori</p>
+             </div>
+             <form method="POST" action="">
+                {{form.hidden_tag()}}
+                <div class="error">
+                    {{msg}}
+                </div>
+                <div class="text_username">
+                    {{form.username}}
+
+                </div>
+                <div class="text_pwd">
+                    {{form.password}}
+
+                </div>
+                <div class="button">
+                    {{form.submit}}
+                </div>
+             </form>
+        </div>
+        <div class="orRegister">
+            <p>Non hai un account?&nbsp;&nbsp;<a href="{{url_for('register')}}" class="link">REGISTRATI</a></p>
+        </div>
+    </div>
+</body>
+</html>
