@@ -35,7 +35,7 @@ div{
     left: 50%;
     transform: translate(-50%);
     width: 418px;
-    height: 317px;
+    height: 487px;
     background-image: linear-gradient(to bottom, #8290DA, #091345 100%);
     border-radius: 15px;
 }
@@ -76,6 +76,9 @@ div{
     background-color: transparent;
     cursor: text;
 }
+.register_form form #name::placeholder{
+    color: rgb(172, 181, 219);
+}
 
 .register_form form #surname{
     width: 300px;
@@ -88,6 +91,9 @@ div{
     outline: none;
     margin-bottom: 20px;
     cursor: text;
+}
+.register_form form #surname::placeholder{
+    color: rgb(172, 181, 219);
 }
 
 .register_form form #username{
@@ -109,7 +115,7 @@ div{
 .register_form form #email{
     width: 300px;
     height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid rgb(172, 181, 219);
     color: rgb(221, 223, 232);
     background-color: transparent;
@@ -117,12 +123,15 @@ div{
     outline: none;
     margin-bottom: 20px;
     cursor: text;
+}
+.register_form form #email::placeholder{
+    color: rgb(172, 181, 219);
 }
 
 .register_form form #password{
     width: 300px;
     height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid rgb(172, 181, 219);
     color: rgb(221, 223, 232);
     background-color: transparent;
@@ -131,11 +140,14 @@ div{
     margin-bottom: 20px;
     cursor: text;
 }
+.register_form form #password::placeholder{
+    color: rgb(172, 181, 219);
+}
 
 .register_form form #conf_password{
     width: 300px;
     height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid rgb(172, 181, 219);
     color: rgb(221, 223, 232);
     background-color: transparent;
@@ -143,4 +155,87 @@ div{
     outline: none;
     margin-bottom: 20px;
     cursor: text;
+}
+.register_form form #conf_password::placeholder{
+    color: rgb(172, 181, 219);
+}
+
+.register_form .writing p{
+    color: white;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/*CSS of Caution*/
+
+.caution{
+    position: absolute;
+    width: 310px;
+    left: 70%;
+    top: 22%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid rgb(172, 181, 219);
+    border-radius: 15px;
+}
+
+.caution .caut_title p{
+    color: rgb(221, 223, 232);
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.caution .error{
+    color: #de5d4c;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.orLogin p{
+    color: rgb(221, 223, 232);
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center; 
+}
+
+/*CSS of orLogin*/
+
+.orLogin p .link{
+    color: rgb(221, 223, 232);;
+    text-decoration: none;
+}
+.orLogin p .link:hover{
+    color: rgb(172, 181, 219);
+}
+
+a{
+    cursor: pointer;
+}
+
+/*CSS of Come Back*/
+
+img#cBack{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.come_back #cBack{
+    position: absolute;
+    float: left;
+    top:42px;
+    left:60px;
 }
