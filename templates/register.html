@@ -46,42 +46,45 @@
                 </div>
             </div>
             <div class="caution">
-                <div class="warn_title">
+                <div class="caut_title">
                     <p>Qui sono riportati i seguenti errori nel caso la registrazione non va a buon fine:</p>
                 </div>
-                <div class="error1">
+                <div class="error">
                     {% for error in form.email.errors %}
                     {{ error }}
                     {% endfor%}
                 </div>
-                <div class="error2">
+                <div class="error">
                     {% for error in form.username.errors %}
                     {{ error }}
                     {% endfor%}
                 </div>
-                <div class="error3">
+                <div class="error">
                     {% for error in form.password.errors %}
                     {{ error }}
                     {% endfor%}
                 </div>
-                <div class="error4">
+                <div class="error">
                     {% for error in form.conf_password.errors %}
                     {{ error }}
                     {% endfor%}
                 </div>
-                  <div class="error5">
-                      {% for error in form.name.errors %}
-                      {{ error }}
-                      {% endfor%}
-                  </div>
-                  <div class="error6">
-                      {% for error in form.surname.errors %}
-                      {{ error }}
-                      {% endfor%}
-                  </div>
+                <div class="error">
+                    {% for error in form.name.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error">
+                    {% for error in form.surname.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
             </div>
             {% endif%}
             </form>
+        </div>
+        <div class="orLogin">
+            <p>Hai già un account?&nbsp;&nbsp;<a href="{{url_for('login')}}" class="link">ACCEDI</a></p>
         </div>
     </div>
 </body>
