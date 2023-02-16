@@ -126,7 +126,7 @@ def login():
       if user:
          if bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user)
-            return redirect(url_for('homepage'))
+            return redirect(url_for('dashboard'))
          else:
              msg = "Username o password non validi"
       else:
@@ -134,12 +134,40 @@ def login():
 
    return render_template('login.html', form=form, msg=msg)
 
+
 @app.route('/logout', methods=['GET', 'POST'])
 @login_required
 def logout():
     session.clear()
     logout_user()
     return redirect(url_for('login'))
+
+
+@app.route('/dashboard', methods=['GET', 'POST'])
+@login_required
+def dashboard():
+    return render_template('dashboard.html')
+
+
+@app.route('/wishlist/new', methods=['GET', 'POST'])
+@login_required
+def new_wishlist():
+    form = WishListForm()
+    if form.validate_on_submit():
+        wishlist = WishList(name=form.name.data, description=form.description.data, user_id=current_user.id)
+        db.session.add(wishlist)
+        db.session.commit()
+        flash('Your wishlist has been created!', 'success')
+        return redirect(url_for('dashboard'))
+    return render_template('new_wishlist.html', title='New Wishlist', form=form)
+
+
+@app.route('/wishlist')
+@login_required
+def wishlist():
+    wishlists = WishList.query.filter_by(user_id=current_user.id).all()
+    return render_template('wishlist.html', title='Wishlist', wishlists=wishlists)
+
 
 
 if __name__ == '__main__': #Serve per runnare l'app dal localhost nella porta 5500
