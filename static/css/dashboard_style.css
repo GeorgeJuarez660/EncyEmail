@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+body{
+    background-image: url("/static/images/background/ency.png");
+    background-attachment: fixed;
+}
+
+div{
+    text-align: center;
+}
+
+.macro-piece #title{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    width:850px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title h1{
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
