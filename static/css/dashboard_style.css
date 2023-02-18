@@ -30,3 +30,85 @@ div{
 
 /*CSS of Dashboard Info*/
 
+.dashboard_info{
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 3em;
+}
+
+.dashboard_info .dash{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7em;
+}
+
+.dash #ency_side button{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: #5881D1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.dash #email_side button{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    color: black;
+    background-color: #47A3D7;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.dash #logout button{
+    position: relative;
+    margin-top: 80%;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    color: black;
+    background-color: #E25A5A;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+img#ency, #email{
+    position: relative;
+    bottom: 6em;
+    width: 80px;
+}
+
+img#logout{
+    position: relative;
+    bottom: 1em;
+    width: 60px;
+}
+
+a button #f_title_btn{
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    bottom: 3em;
+}
+
+a button #s_title_btn{
+    color: white;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    font-size: 24px;
+    position: relative;
+}
