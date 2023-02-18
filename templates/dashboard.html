@@ -11,35 +11,43 @@
     <div class="macro-piece">
         <header id="title">
             {% if current_user.is_authenticated %}
-            <h1>Benvenuto {{current_user.username}}, ora scegli se vorresti consultare le definizioni oppure inviare le email</h1>
+            <h1>Benvenuto {{current_user.username}}, ora scegli se vorresti consultare le definizioni oppure inviare delle email</h1>
             {% endif %}
         </header>
         <div class="dashboard_info">
             <div class="dash">
-                <a id="ency_side">
+                <div id="ency_side">
+                    <a href="">
                     <button>
                        <div>
                           <img src="/static/images/sym/ency_sym.png" alt="Ency" id="ency">
                        </div>
-                       <p></p> 
+                       <p id="f_title_btn">ENCY side</p>
+                       <p id="s_title_btn">Consulta le definizioni ovvero voci informative o critiche</p>
                     </button>
-                </a>
-                <a id="logout">
+                    </a>
+                </div>
+                <div id="logout">
+                    <a href="{{url_for('logout')}}">
                     <button>
                        <div>
                           <img src="/static/images/sym/logout_sym.png" alt="Logout" id="logout">
                        </div>
-                       <p></p> 
+                       <p id="s_title_btn">LOGOUT</p>
                     </button>
-                </a>
-                <a id="email_side">
+                    </a> 
+                </div>
+                <div id="email_side">
+                    <a href="">
                     <button>
                        <div>
                           <img src="/static/images/sym/email_sym.png" alt="Email" id="email">
                        </div>
-                       <p></p> 
+                       <p id="f_title_btn">EMAIL side</p>
+                       <p id="s_title_btn">Inviare delle email agli utenti</p> 
                     </button>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
