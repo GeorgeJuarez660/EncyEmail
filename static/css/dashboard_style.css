@@ -58,6 +58,9 @@ div{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+.dash #ency_side button:hover{
+    background-color: #364e7e;
+}
 
 .dash #email_side button{
     position: relative;
@@ -65,10 +68,12 @@ div{
     border-radius: 10px;
     width: 500px;
     height: 500px;
-    color: black;
     background-color: #47A3D7;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+}
+.dash #email_side button:hover{
+    background-color: #2d6483;
 }
 
 .dash #logout button{
@@ -78,10 +83,13 @@ div{
     border-radius: 10px;
     width: 200px;
     height: 200px;
-    color: black;
     background-color: #E25A5A;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+}
+
+.dash #logout button:hover{
+    background-color: #8d3939;
 }
 
 img#ency, #email{
