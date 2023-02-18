@@ -148,6 +148,16 @@ def logout():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/dashboard/ency', methods=['GET', 'POST'])
+@login_required
+def dency():
+    return render_template('d-ency.html')
+
+@app.route('/dashboard/email', methods=['GET', 'POST'])
+@login_required
+def demail():
+    return render_template('d-email.html')
+
 
 @app.route('/wishlist/new', methods=['GET', 'POST'])
 @login_required
