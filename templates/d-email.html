@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EMAIL side</title>
+</head>
+<body>
+    <div class="macro-piece">
+        <header id="title">
+            {% if current_user.is_authenticated %}
+            <h1>Caro {{current_user.username}} sei nell'EMAIL side. Qui puoi inviare delle email agli utenti</h1>
+            {% endif %}
+        </header>
+        <div class="email_info">
+            <div class="email">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
