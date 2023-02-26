@@ -44,20 +44,6 @@ class User(db.Model, UserMixin):
    username = db.Column(db.String(20), nullable=False, unique=True)
    password = db.Column(db.String(80), nullable=False)
 
-
-class WishList(db.Model):
-   __tablename__ = 'WishList'
-
-   id = db.Column(db.Integer, primary_key=True)
-   name = db.Column(db.String(100), nullable=False)
-   description = db.Column(db.String(200))
-   user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
-
-def __repr__(self):
-        return f"Wishlist('{self.name}', '{self.description}', '{self.user_id}')"
-
-
-
 class RegisterForm(FlaskForm):
       name = StringField(validators=[InputRequired(), Length(min=3, max=50), Regexp("^[A-Za-z]*$", 0, "Il nome deve contenere solo lettere")], render_kw={"placeholder": "inserisci il nome"})
       surname = StringField(validators=[InputRequired(), Length(min=3, max=50), Regexp("^[A-Za-z]*$", 0, "Il cognome deve contenere solo lettere")], render_kw={"placeholder": "inserisci il cognome"})
@@ -84,12 +70,6 @@ class LoginForm(FlaskForm):
       remember = BooleanField('Ricordami')
 
       submit = SubmitField("ACCEDI")
-
-class WishListForm(FlaskForm):
-      name = StringField('Nome', validators=[DataRequired()])
-      description = StringField('Descrizione')
-
-      submit = SubmitField('Creazione Wishlist')
 
 @app.route('/')
 def index():
@@ -125,8 +105,9 @@ def login():
       user = User.query.filter_by(username=form.username.data).first()
       if user:
          if bcrypt.check_password_hash(user.password, form.password.data):
-            login_user(user)
-            return redirect(url_for('dashboard'))
+            login_user(user, remember=form.remember.data)
+            next_page = request.args.get('next')
+            return redirect(next_page) if next_page else redirect(url_for('dashboard'))
          else:
              msg = "Username o password non validi"
       else:
@@ -157,27 +138,6 @@ def dency():
 @login_required
 def demail():
     return render_template('d-email.html')
-
-
-@app.route('/wishlist/new', methods=['GET', 'POST'])
-@login_required
-def new_wishlist():
-    form = WishListForm()
-    if form.validate_on_submit():
-        wishlist = WishList(name=form.name.data, description=form.description.data, user_id=current_user.id)
-        db.session.add(wishlist)
-        db.session.commit()
-        flash('Your wishlist has been created!', 'success')
-        return redirect(url_for('dashboard'))
-    return render_template('new_wishlist.html', title='New Wishlist', form=form)
-
-
-@app.route('/wishlist')
-@login_required
-def wishlist():
-    wishlists = WishList.query.filter_by(user_id=current_user.id).all()
-    return render_template('wishlist.html', title='Wishlist', wishlists=wishlists)
-
 
 
 if __name__ == '__main__': #Serve per runnare l'app dal localhost nella porta 5500
