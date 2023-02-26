@@ -35,7 +35,7 @@ div{
     left: 50%;
     transform: translate(-50%);
     width: 418px;
-    height: 487px;
+    height: 520px;
     background-image: linear-gradient(to bottom, #8290DA, #091345 100%);
     border-radius: 15px;
 }
@@ -160,6 +160,35 @@ div{
     color: rgb(172, 181, 219);
 }
 
+.register_form form #is_admin{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid rgb(172, 181, 219);
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.register_form form #is_admin:checked{
+    background: rgb(172, 181, 219);
+}
+
+.check_admin #is_adm{
+    color: rgb(172, 181, 219);
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 23px;
+}
+
 .register_form .writing p{
     color: white;
     font-family: 'Jaldi', sans-serif; 
@@ -204,7 +233,9 @@ div{
     font-family: 'Jaldi', sans-serif; 
     font-weight: lighter;
     font-size: 20px;
-    text-align: center; 
+    text-align: center;
+    position: relative;
+    bottom:20px;
 }
 
 .orLogin p .link{
