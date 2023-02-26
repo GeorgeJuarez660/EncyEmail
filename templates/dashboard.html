@@ -11,7 +11,11 @@
     <div class="macro-piece">
         <header id="title">
             {% if current_user.is_authenticated %}
-            <h1>Benvenuto {{current_user.username}}, ora scegli se vorresti consultare le definizioni oppure inviare delle email</h1>
+                {% if current_user.is_admin %}
+                  <h1>Salve admin, gestisci il tuo sito</h1>
+                {% else %}
+                  <h1>Benvenuto {{current_user.username}}, ora scegli se vorresti consultare le definizioni oppure inviare delle email</h1>
+                {% endif %}
             {% endif %}
         </header>
         <div class="dashboard_info">
@@ -22,8 +26,15 @@
                        <div>
                           <img src="/static/images/sym/ency_sym.png" alt="Ency" id="ency">
                        </div>
-                       <p id="f_title_btn">ENCY side</p>
-                       <p id="s_title_btn">Consulta le definizioni ovvero voci informative o critiche</p>
+                        {% if current_user.is_authenticated %}
+                           {% if current_user.is_admin %}
+                              <p id="f_title_btn">ENCY side</p>
+                              <p id="s_title_btn">Aggiungi le definizioni ovvero voci informative o critiche</p>
+                           {% else %}
+                              <p id="f_title_btn">ENCY side</p>
+                              <p id="s_title_btn">Consulta le definizioni ovvero voci informative o critiche</p>
+                           {% endif %}
+                        {% endif %}
                     </button>
                     </a>
                 </div>
@@ -43,8 +54,15 @@
                        <div>
                           <img src="/static/images/sym/email_sym.png" alt="Email" id="email">
                        </div>
-                       <p id="f_title_btn">EMAIL side</p>
-                       <p id="s_title_btn">Invia le email agli utenti</p> 
+                       {% if current_user.is_authenticated %}
+                           {% if current_user.is_admin %}
+                              <p id="f_title_btn">EMAIL side</p>
+                              <p id="s_title_btn">Aggiungi i destinatari</p>
+                           {% else %}
+                              <p id="f_title_btn">EMAIL side</p>
+                              <p id="s_title_btn">Invia le email agli utenti</p>
+                           {% endif %}
+                       {% endif %} 
                     </button>
                     </a>
                 </div>
