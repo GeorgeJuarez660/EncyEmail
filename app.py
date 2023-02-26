@@ -43,6 +43,7 @@ class User(db.Model, UserMixin):
    email = db.Column(db.String(80), nullable=False, unique=True)
    username = db.Column(db.String(20), nullable=False, unique=True)
    password = db.Column(db.String(80), nullable=False)
+   is_admin = db.Column(db.Boolean, default=False)
 
 class RegisterForm(FlaskForm):
       name = StringField(validators=[InputRequired(), Length(min=3, max=50), Regexp("^[A-Za-z]*$", 0, "Il nome deve contenere solo lettere")], render_kw={"placeholder": "inserisci il nome"})
@@ -51,6 +52,7 @@ class RegisterForm(FlaskForm):
       username = StringField(validators=[InputRequired(), Length(min=4, max=25, message="Inserisci un username da 4 caratteri"), Regexp("^[A-Za-z][A-Za-z0-9_.]*$", 0, "L'username deve contenere solo lettere, numeri, punti e underscore")], render_kw={"placeholder": "inserisci l'username"})
       password = PasswordField(validators=[InputRequired(), Length(min=4, max=25)], render_kw={"placeholder": "inserisci la password"})
       conf_password = PasswordField(validators=[InputRequired(), Length(min=4, max=25), EqualTo("password", message="Le password non coincidono")], render_kw={"placeholder": "conferma la password"})
+      is_admin = BooleanField('Sei Admin')
 
       submit = SubmitField("REGISTRATI")
 
@@ -84,7 +86,7 @@ def register():
    if form.validate_on_submit():
     try:
       hashed_password = bcrypt.generate_password_hash(form.password.data)
-      new_user = User(name=form.name.data, surname=form.surname.data, email=form.email.data, username=form.username.data, password=hashed_password)
+      new_user = User(name=form.name.data, surname=form.surname.data, email=form.email.data, username=form.username.data, password=hashed_password, is_admin=form.is_admin.data)
       db.session.add(new_user)
       db.session.commit()
       flash(f"Registrazione avvenuta con successo", "success")
