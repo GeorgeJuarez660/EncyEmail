@@ -10,7 +10,11 @@
     <div class="macro-piece">
         <header id="title">
             {% if current_user.is_authenticated %}
-            <h1>Caro {{current_user.username}} sei nell'EMAIL side. Qui puoi inviare delle email agli utenti</h1>
+                {% if current_user.is_admin %}
+                    <h1>Caro admin sei nell'EMAIL side. Gestisci questo side come meglio credi</h1>
+                {% else %}
+                    <h1>Caro {{current_user.username}} sei nell'EMAIL side. Qui puoi inviare delle email agli utenti</h1>
+                {% endif %}
             {% endif %}
         </header>
         <div class="email_info">
