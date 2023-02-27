@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+body{
+    background-image: url("/static/images/background/ency.png");
+    background-attachment: fixed;
+}
+
+div{
+    text-align: center;
+}
+
+/*CSS of Clock*/
+
+.bottom .clock_display {
+    position: relative;
+    color:black;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 7px;
+}
+
+/*CSS of Title*/
+
+.macro-piece #title{
+    background-image: linear-gradient(to top, rgba(88, 128, 209, 0.704), rgba(88,129,209,1));
+}
+
+#title h1{
+    width: 26em;
+    height: 3em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-family: 'Irish Grover', cursive;
+    color: white;
+}
+
+/*CSS of Ency_Info*/
+
+.ency_info .ency .top, .bottom{
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.top, .bottom p{
+    position: relative;
+    color:black;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 7px;
+}
