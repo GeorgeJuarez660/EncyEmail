@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/d-encyemail_style.css">
     <title>Dashboard - ENCY side</title>
 </head>
 <body>
@@ -18,10 +19,31 @@
             {% endif %}
         </header>
         <div class="ency_info">
-            <div class="ency">
-                
+            <div class="second_piece ency">
+              {% if current_user.is_authenticated %}
+                {% if current_user.is_admin %}
+                  <div class="top">
+                    <div class="choose">
+                        <a href=""><button class="btn"><p>Aggiungi la definizione</p></button></a>
+                    </div>
+                    <div class="choose">
+                        <a href=""><button class="btn"><p>Rimuovi la definizione</p></button></a>
+                    </div>
+                  </div>
+                {% else %}
+                  <div class="bottom">
+                    <p>Sono le</p>
+                    <p class="clock_display" id="clock_container" onload="showTime()"></p>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+            <div class="third_piece ency">
+                <!--Definitions List-->
             </div>
         </div>
     </div>
+    <script src="/static/js/clock.js"></script>
+    <script src="/static/js/fetch_definitions.js"></script>
 </body>
 </html>
