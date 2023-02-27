@@ -1,0 +1,28 @@
+{
+    "movies": [{
+      "id": 1,
+      "codex": "CJ",
+      "name": "La casa di Jack"
+      },
+      {
+        "id": 2,
+        "codex": "RB",
+        "name": "Rosemary's Baby - Nastro Rosso a New York"
+      },
+      {
+        "id": 3,
+        "codex": "CB",
+        "name": "La casa delle bambole"
+      },
+      {
+        "id": 4,
+        "codex": "MS",
+        "name": "Midsommar"
+      },
+      {
+        "id": 5,
+        "codex": "GO",
+        "name": "Get Out"
+      }
+    ]
+  }
