@@ -18,13 +18,13 @@
                 {% endif %}
             {% endif %}
         </header>
-        <div class="ency_info">
-            <div class="second_piece ency">
+        <div class="encyemail_info">
+            <div class="second_piece encyemail">
               {% if current_user.is_authenticated %}
                 {% if current_user.is_admin %}
                   <div class="top">
                     <div class="choose">
-                        <a href="{{url_for('dency_add')}}"><button class="btn"><p>Modifica il file JSON</p></button></a>
+                        <a href="{{url_for('dency_edit')}}"><button class="btn"><p id="editing">Modifica il file JSON</p></button></a>
                     </div>
                   </div>
                 {% else %}
@@ -35,7 +35,7 @@
                 {% endif %}
               {% endif %}
             </div>
-            <div class="third_piece ency">
+            <div class="third_piece encyemail">
                 <!--Definitions List-->
             </div>
         </div>
