@@ -67,6 +67,9 @@ div{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+.encyemail_info .encyemail .top .choose .btn:hover{
+    transform: scale(1.1);
+}
 
 .top, .bottom p{
     position: relative;
