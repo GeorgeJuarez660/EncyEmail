@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+body{
+    background-image: url("/static/images/background/ency.png");
+    background-attachment: fixed;
+}
+
+div{
+    text-align: center;
+}
+
+header h1{
+    background-image: linear-gradient(to top, rgba(88, 128, 209, 0.704), rgba(88,129,209,1));
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+h1{
+    font-weight: bold;
+    font-family: 'Jaldi', sans-serif;
+    color: white;
+}
+
+div #show_sc{
+    text-align: left;
+}
+
+.precode{
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+}
+
+.precode .code {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #5881D1;
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    background: transparent;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+}
+
+div p{
+    position: relative;
+    color:#5881D1;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.precode .text{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+div textarea{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #5881D1;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+}
+
+div #download-btn{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 10em;
+    height: 2em;
+    background-color: #5881D1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
