@@ -38,18 +38,34 @@ div{
     color: white;
 }
 
-/*CSS of Ency_Info*/
+/*CSS of encyemail_info*/
 
-.ency_info .ency .top, .bottom{
+.encyemail_info{
     background-color: white;
     position: relative;
     bottom: 20px;
+    height: 38em;
+}
+
+.encyemail_info .encyemail .top, .bottom{
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+}
+
+.encyemail_info .encyemail .top .choose .btn{
+    position: relative;
+    top: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 95em;
+    height: 4em;
+    background-color: #5881D1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .top, .bottom p{
@@ -59,4 +75,40 @@ div{
     font-family: 'Jaldi', sans-serif; 
     font-weight: lighter;
     letter-spacing: 7px;
+}
+
+.choose a .btn #editing{
+    position: relative;
+    color:white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 7px;
+    margin: 0 auto;
+}
+
+.encyemail_info .third_piece{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+.encyemail_info .third_piece .definition .box{
+    position: relative;
+    border: 2px solid #5881D1;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.encyemail_info .third_piece .definition .box:hover{
+    transform: scale(1.1);
 }
