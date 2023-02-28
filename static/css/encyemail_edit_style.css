@@ -27,6 +27,29 @@ h1{
     color: white;
 }
 
+/*CSS of Come Back*/
+
+img#cBack{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.come_back #cBack{
+    position: absolute;
+    float: left;
+    top:30px;
+    left:60px;
+}
+
+/*CSS of Precode*/
+
 div #show_sc{
     text-align: left;
 }
