@@ -136,11 +136,11 @@ def dashboard():
 def dency():
     return render_template('d-ency.html')
 
-@app.route('/dashboard/ency/add-def', methods=['GET', 'POST'])
+@app.route('/dashboard/ency/edit-def', methods=['GET', 'POST'])
 @login_required
-def dency_add():
+def dency_edit():
     if current_user.is_admin:
-        return render_template('ency-add.html')
+        return render_template('ency-edit.html')
     else:
         return render_template('d-ency.html')
 
