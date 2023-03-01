@@ -10,8 +10,11 @@ div{
     text-align: center;
 }
 
-header h1{
+.macro-piece{
     background-image: linear-gradient(to top, rgba(88, 128, 209, 0.704), rgba(88,129,209,1));
+}
+
+header h1{
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -57,7 +60,11 @@ div #show_sc{
 .precode{
     background-color: white;
     position: relative;
+    width:1200px;
+    left:50%;
+    transform: translate(-50%);
     bottom: 20px;
+    border-radius: 15px;
 }
 
 .precode .code {
