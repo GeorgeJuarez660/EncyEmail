@@ -1,28 +1,24 @@
 {
-  "movies": [{
-    "id": 1,
-    "codex": "CJ",
-    "name": "Text1"
+  "definitions": [
+    {
+      "id": 1,
+      "name": "Ferrovia Torre Annunziata-Castellammare di Stabia-Gragnano"
     },
     {
       "id": 2,
-      "codex": "RB",
-      "name": "Text2"
+      "name": "Amalfi"
     },
     {
       "id": 3,
-      "codex": "CB",
-      "name": "Text3"
+      "name": "Giappone"
     },
     {
       "id": 4,
-      "codex": "MS",
-      "name": "Text4"
+      "name": "Australia"
     },
     {
       "id": 5,
-      "codex": "GO",
-      "name": "Text5"
+      "name": "Salerno"
     }
   ]
 }
