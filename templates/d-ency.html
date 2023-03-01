@@ -9,6 +9,11 @@
 </head>
 <body>
     <div class="macro-piece">
+        <div class="menu">
+          <div class="menu_btn" id="menu_btn">
+            <button class="btn"><img src="/static/images/sym/menu_sym.png" alt="Menu"></button>
+          </div>
+        </div>
         <header id="title">
             {% if current_user.is_authenticated %}
                 {% if current_user.is_admin %}
@@ -39,8 +44,28 @@
                 <!--Definitions List-->
             </div>
         </div>
+        <div class="info_menu">
+          <div class="menu-pane" id="ee_menu">
+            <nav>
+              <div class="lateral">
+                <div class="manual">
+                  <img src="/static/images/sym/manual_sym.png" alt="manual" id="img_manual">
+                  <div class="write_manual">
+                    <a href="" id="name_manual">Manuale d'uso</a>
+                  </div>
+                </div>
+                <div class="account">
+                  <img src="/static/images/sym/user_sym.png" alt="account" id="img_account">
+                <div class="write_account">
+                  <a href="" id="name_account">Account</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
     </div>
     <script src="/static/js/clock.js"></script>
     <script src="/static/js/fetch_definitions.js"></script>
+    <script src="/static/js/link_buttons.js"></script>
 </body>
 </html>
