@@ -31,11 +31,123 @@ div{
     width: 26em;
     height: 3em;
     position: relative;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%);
     font-weight: bold;
     font-family: 'Irish Grover', cursive;
     color: white;
+}
+
+/*CSS of Menu*/
+
+.menu .menu_btn .btn{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: 3em;
+    border: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.menu .menu_btn .btn img{
+    width: 50px;
+    height: 50px;
+}
+
+.info_menu .menu-pane {
+    background:linear-gradient(to bottom, #3A3434, #000);
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 1536px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.open{ /*Unknown variable - linking*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    opacity: 90%;
+    z-index: 99;
+}
+
+.menu-pane a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane p {
+    color: black;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane nav {
+    padding: 10%;
+}
+
+.menu-pane .lateral .manual #img_manual{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 1vw;
+    transform: translateY(5vw);
+}
+
+.menu-pane .lateral .manual .write_manual #name_manual{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: 2vw;
+    transform: translateY(4vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .manual{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .manual:hover{
+    transform: scale(1.1);
+}
+
+.menu-pane .lateral .account #img_account{
+    position: relative;
+    float: left;
+    top: 0;
+    left: -12vw;
+    transform: translateY(9vw);
+    width: 45px;
+    height: 47.41px;
+}
+
+.menu-pane .lateral .account .write_account #name_account{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: -11vw;
+    transform: translateY(8vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .account{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .account:hover{
+    transform: scale(1.1);
 }
 
 /*CSS of encyemail_info*/
