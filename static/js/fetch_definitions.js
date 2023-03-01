@@ -8,7 +8,7 @@ const getData = async()=>{
         let response = await fetch(jsonData);
         let data = await response.json();
         console.log(data)
-        data.movies.forEach(d => def.push(d));
+        data.definitions.forEach(d => def.push(d));
         //DOM
         renderDefinitions(def);
 
