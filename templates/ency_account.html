@@ -7,3 +7,57 @@
     <link rel="stylesheet" href="/static/css/encyemail_account_style.css">
     <title>ENCY side - Account</title>
 </head>
+<body>
+    <div class="come_back">
+        <a href="{{url_for('dency')}}"><img src="/static/images/sym/come_back_sym.png" alt="Come_Back" id="cBack"></a>
+    </div>
+    <div class="macro-piece">
+        <header>
+            {% if current_user.is_authenticated %}
+                <h1>Informazioni del profilo account {{current_user.username}}</h1>
+            {% endif %}
+        </header>
+        <div class="second_piece">
+            <div class="white_part">
+                <div class="u1">
+                    <p>Nome:</p>
+                </div>
+                <div class="u1">
+                    <p>Cognome:</p>
+                </div>
+                <div class="u1">
+                    <p>Email:</p>
+                </div>
+                {% if current_user.is_authenticated %}
+                <div class="u2">
+                    <p>{{current_user.name}}</p>
+                </div>
+                <div class="u2">
+                    <p>{{current_user.surname}}</p>
+                </div>
+                <div class="u2">
+                    <p>{{current_user.email}}</p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="buttons">
+                <div class="logout_btn">
+                    <a href="{{url_for('logout')}}" class="link_logout">
+                        <button class="logout_push">
+                            <img src="/static/images/sym/logout_sym.png" alt="Logout">
+                            <p>LOGOUT</p>
+                        </button>
+                    </a>
+                </div>
+                <div class="email_btn">
+                    <a href="{{url_for('demail')}}" class="link_email">
+                        <button class="email_push">
+                            <img src="/static/images/sym/email_sym.png" alt="Email">
+                            <p>EMAIL side</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
