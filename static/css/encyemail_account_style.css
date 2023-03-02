@@ -9,3 +9,180 @@ body{
 div{
     text-align: center;
 }
+
+.macro-piece{
+    background-image: linear-gradient(to top, rgba(88, 128, 209, 0.704), rgba(88,129,209,1));
+    height: 46em;
+}
+
+/*CSS of Come Back*/
+
+img#cBack{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#cBack:hover{
+    transform: rotate(-360deg);
+}
+
+.come_back #cBack{
+    position: relative;
+    float: left;
+    top:22px;
+    left:60px;
+}
+
+/*CSS of Title*/
+
+.macro-piece header{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    width:850px;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/*CSS of Second Piece*/
+
+.second_piece{
+    width: 700px;
+    height: 515px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.second_piece .white_part{
+    background-color: transparent;
+    position: relative;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    width: 40em;
+    height: 15em;
+    border-radius: 15px;
+}
+
+.white_part p{
+    font-size: 24px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+}
+
+.white_part .u1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.white_part .u2{
+    display: flex;
+    position: relative;
+    bottom: 17vw;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+/*CSS of Logout and Email buttons*/
+
+.second_piece .buttons{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.second_piece .buttons .logout_btn .link_logout .logout_push{
+    background-color: #E25A5A;
+    position: relative;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 130px;
+    height: 130px;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.second_piece .buttons .logout_btn .link_logout .logout_push:hover{
+    box-shadow: 5px 5px 10px #929292;
+}
+
+.logout_push p{
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    margin: 0 auto;
+}
+
+.logout_btn a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.second_piece .buttons .email_btn .link_email .email_push{
+    background-color: #47A3D7;
+    position: relative;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 130px;
+    height: 130px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+.second_piece .buttons .email_btn .link_email .email_push:hover{
+    box-shadow: 5px 5px 10px #929292;
+}
+
+.email_push p{
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
+    margin: 0 auto;
+}
+
+.email_btn a{
+    text-align: center;
+    text-decoration: none;
+}
+
+button img{
+    width:35px;
+    height:35px;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
