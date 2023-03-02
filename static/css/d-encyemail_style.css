@@ -59,7 +59,7 @@ div{
 }
 
 .info_menu .menu-pane {
-    background:linear-gradient(to bottom, #3A3434, #000);
+    background-color: #5881D1;
     z-index: 150;
     position: absolute;
     top: 0;
@@ -76,21 +76,14 @@ div{
     top: 0;
     left: 30px;
     transform: translateX(-30px) !important;
-    background: linear-gradient(to bottom, #3A3434, #000);
-    opacity: 90%;
+    background-color: #5881D1;
     z-index: 99;
 }
 
 .menu-pane a {
-    color: black;
+    color: white;
     font-size: 26px;
     text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-}
-
-.menu-pane p {
-    color: black;
-    font-size: 26px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -98,21 +91,37 @@ div{
     padding: 10%;
 }
 
+.lateral{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.lateral .manual, .account{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 35px;
+    cursor: pointer;
+}
+
 .menu-pane .lateral .manual #img_manual{
     position: relative;
-    float: left;
-    top: 0;
-    left: 1vw;
-    transform: translateY(5vw);
+    width: 45px;
+    height: 47.41px;
+    bottom: 5px;
 }
 
 .menu-pane .lateral .manual .write_manual #name_manual{
-    position: relative;
-    float: left;
-    top: 1em;
-    left: 2vw;
-    transform: translateY(4vw);
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter; 
 }
 
 .menu-pane .lateral .manual{
@@ -125,21 +134,14 @@ div{
 
 .menu-pane .lateral .account #img_account{
     position: relative;
-    float: left;
-    top: 0;
-    left: -12vw;
-    transform: translateY(9vw);
     width: 45px;
     height: 47.41px;
+    bottom: 5px;
 }
 
 .menu-pane .lateral .account .write_account #name_account{
-    position: relative;
-    float: left;
-    top: 1em;
-    left: -11vw;
-    transform: translateY(8vw);
-    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: lighter;
 }
 
 .menu-pane .lateral .account{
@@ -226,4 +228,36 @@ div{
 }
 .encyemail_info .third_piece .definition .box:hover{
     transform: scale(1.1);
+}
+
+/*CSS of Come Back button*/
+
+.info_menu .menu-pane .come_back #btn{
+    position: relative;
+    float: left;
+    bottom: 23em;
+    right: 30em;
+    border: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-pane .come_back #btn img{
+    width: 45px;
+    height: 45px;
+}
+
+img#cBack{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+img:hover{
+    transform: rotate(-360deg);
 }
