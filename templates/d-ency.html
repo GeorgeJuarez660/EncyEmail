@@ -46,6 +46,9 @@
         </div>
         <div class="info_menu">
           <div class="menu-pane" id="ee_menu">
+            <div class="come_back" id="back_btn">
+              <button id="btn"><img src="/static/images/sym/come_back_sym.png" alt="Come_Back" id="cBack"></button>
+            </div>
             <nav>
               <div class="lateral">
                 <div class="manual">
@@ -56,8 +59,9 @@
                 </div>
                 <div class="account">
                   <img src="/static/images/sym/user_sym.png" alt="account" id="img_account">
-                <div class="write_account">
-                  <a href="" id="name_account">Account</a>
+                  <div class="write_account">
+                    <a href="{{url_for('dency_acc')}}" id="name_account">Account</a>
+                  </div>
                 </div>
               </div>
             </nav>
