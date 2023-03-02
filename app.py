@@ -149,7 +149,7 @@ def dency_edit():
 def dency_acc():
     return render_template('ency_account.html')
 
-@app.route('/dashboard/email', methods=['GET', 'POST'])
+@app.route('/dashbroards/email', methods=['GET', 'POST'])
 @login_required
 def demail():
     return render_template('d-email.html')
