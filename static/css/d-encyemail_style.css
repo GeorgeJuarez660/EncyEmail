@@ -230,6 +230,15 @@ div{
     transform: scale(1.1);
 }
 
+.box img{
+    position: relative;
+    bottom: 3px;
+    right: 8px;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+}
+
 /*CSS of Come Back button*/
 
 .info_menu .menu-pane .come_back #btn{
