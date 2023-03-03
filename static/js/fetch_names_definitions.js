@@ -27,7 +27,7 @@ const renderNames = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         names_definitions.innerHTML += `
         <div class="definition" data-top="${i}">
-            <button class="box" id="${arr[i].codex}" onclick="">
+            <button class="box" id="${arr[i].id}" onclick="show_definitions(this.id); move_right();">
                 <img src="${arr[i].img}" alt="${arr[i].name}" class="picture">
                 <p class="title">${arr[i].name}</p>
             </button>           

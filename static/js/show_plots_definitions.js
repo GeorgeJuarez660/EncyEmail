@@ -1,6 +1,6 @@
-function ShowDetails(title){
+function show_definitions(ID){
 
-    let defintion_selected = title;
+    let defintion_selected = ID;
 
     let  xhttp = new XMLHttpRequest;
 
