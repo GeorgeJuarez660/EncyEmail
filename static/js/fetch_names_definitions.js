@@ -10,7 +10,7 @@ const getData = async()=>{
         console.log(data)
         data.names.forEach(n => n_def.push(n));
         //DOM
-        renderDefinitions(n_def);
+        renderNames(n_def);
 
     }catch(err){
         if(err) console.log(err);
@@ -21,7 +21,7 @@ const getData = async()=>{
 getData()
 
 //It loops the array and gets the values inside the DOM
-const renderDefinitions = (arr) => {
+const renderNames = (arr) => {
     names_definitions.innerHTML = '';
 
     for (let i = 0; i < arr.length; i++) {
