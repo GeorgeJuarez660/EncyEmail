@@ -270,3 +270,14 @@ img#cBack{
 img:hover{
     transform: rotate(-360deg);
 }
+
+/*CSS of Definition's Title*/
+
+.definitions{
+    background-color: #5881D1;
+    position: relative;
+    left: 107em;
+    bottom: 46em;
+    height:auto;
+}
+
