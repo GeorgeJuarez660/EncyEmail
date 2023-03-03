@@ -1,6 +1,6 @@
 const jsonDisplay = document.getElementById('show_sc');
 
-fetch('/static/json/definitions.json')
+fetch('/static/json/names_definitions.json')
   .then(response => response.json())
   .then(data => {
     //Display the contents of the JSON file in the text field
