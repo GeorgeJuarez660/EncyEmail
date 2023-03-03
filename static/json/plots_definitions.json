@@ -1,19 +1,24 @@
 {
     "plots":[
         {
-            "id":1
+            "id":1,
+            "title": "Tratta ferroviaria Torre Annunzioata-Castellammare di Stabia-Gragnano"
         },
         {
-            "id":2
+            "id":2,
+            "title": "Amalfi"
         },
         {
-            "id":3
+            "id":3,
+            "title": "Giappone"
         },
         {
-            "id":4
+            "id":4,
+            "title": "Australia"
         },
         {
-            "id":5
+            "id":5,
+            "title": "Salerno"
         }
     ]
 }
