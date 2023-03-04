@@ -1,6 +1,8 @@
 function show_definitions(ID){
 
-    let defintion_selected = ID;
+    console.log(ID);
+
+    let definition_selected = ID;
 
     let  xhttp = new XMLHttpRequest;
 
@@ -22,11 +24,11 @@ function show_definitions(ID){
 
                 console.log(plots);
 
-                if (defintion_selected == element.id) {
+                if (definition_selected == element.id) {
 
                     title += `<h2 class="title">${element.title}</h2>`
 
-                    photo_plot += ``
+                    photo_plot += `<img src="${element.img}" alt="${element.title}">`
 
                     pre_plot += ``
 
@@ -36,11 +38,11 @@ function show_definitions(ID){
 
             let res_title = document.getElementById("def_title");
 
-            let res_pp = document.getElementById("flex_section");
+            let res_pp = document.getElementById("def_pp");
 
-            let res_prep = document.getElementById("footer");
+            let res_prep = document.getElementById("def_prep");
 
-            let res_history = document.getElementById("casty")
+            let res_history = document.getElementById("def_history");
 
             res_title.innerHTML = title;
 

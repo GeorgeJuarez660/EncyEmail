@@ -1,24 +1,29 @@
 {
-    "plots":[
-        {
-            "id":1,
-            "title": "Tratta ferroviaria Torre Annunzioata-Castellammare di Stabia-Gragnano"
-        },
-        {
-            "id":2,
-            "title": "Amalfi"
-        },
-        {
-            "id":3,
-            "title": "Giappone"
-        },
-        {
-            "id":4,
-            "title": "Australia"
-        },
-        {
-            "id":5,
-            "title": "Salerno"
-        }
-    ]
+  "plots": [
+    {
+      "id": 1,
+      "title": "Tratta ferroviaria Torre Annunzioata-Castellammare di Stabia-Gragnano",
+      "img": "/static/images/definitions/obj1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Amalfi",
+      "img": "/static/images/obj_definitions/obj2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Giappone",
+      "img": "/static/images/obj_definitions/obj3.png"
+    },
+    {
+      "id": 4,
+      "title": "Australia",
+      "img": "/static/images/obj_definitions/obj4.png"
+    },
+    {
+      "id": 5,
+      "title": "Salerno",
+      "img": "/static/images/obj_definitions/obj5.jpeg"
+    }
+  ]
 }

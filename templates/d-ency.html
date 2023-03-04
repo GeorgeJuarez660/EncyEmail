@@ -31,6 +31,9 @@
                     <div class="choose">
                         <a href="{{url_for('dency_edit')}}"><button class="btn"><p id="editing">Modifica il primo file JSON</p></button></a>
                     </div>
+                    <div class="choose">
+                      <a href="{{url_for('dency_edit2')}}"><button class="btn"><p id="editing">Modifica il secondo file JSON</p></button></a>
+                  </div>
                   </div>
                 {% else %}
                   <div class="bottom">
@@ -71,8 +74,10 @@
           <header id="def_title">
             <!--Definition's Title-->
           </header>
-          <div class="start" id="def_pp">
-               <!--Plot's Photo-->
+          <div class="start">
+               <div id="def_pp">
+                <!--Plot's Photo-->
+               </div>
                <div id="def_prep">
                 <!--Pre-Plot-->
                </div>

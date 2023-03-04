@@ -57,6 +57,10 @@ div #show_sc{
     text-align: left;
 }
 
+div #show_sc2{
+    text-align: left;
+}
+
 .precode{
     background-color: white;
     position: relative;
@@ -113,6 +117,23 @@ div textarea{
     background-color: white;
     font-size: 16px;
     resize: none;
+}
+
+div #download-btn2{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 10em;
+    height: 2em;
+    background-color: #5881D1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin: 0 auto;
 }
 
 div #download-btn{

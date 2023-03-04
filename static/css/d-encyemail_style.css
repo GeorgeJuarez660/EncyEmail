@@ -161,7 +161,16 @@ div{
     height: 38em;
 }
 
-.encyemail_info .encyemail .top, .bottom{
+.encyemail_info .encyemail .top{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+
+.encyemail_info .encyemail .bottom{
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -175,7 +184,7 @@ div{
     top: 10px;
     border: none;
     border-radius: 15px;
-    width: 95em;
+    width: 47em;
     height: 4em;
     background-color: #5881D1;
     cursor: pointer;
@@ -279,5 +288,26 @@ img:hover{
     left: 107em;
     bottom: 46em;
     height:auto;
+}
+
+.definitions header h2{
+    position: relative;
+    color:white;
+    font-family: 'Jaldi', sans-serif; 
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+.definitions .start{
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: auto;
+}
+
+.start{
+    
 }
 
