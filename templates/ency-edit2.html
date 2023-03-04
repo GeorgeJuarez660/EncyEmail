@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/encyemail_edit_style.css">
+    <title>ENCY side - Editing 2</title>
+</head>
+<body>
+    <div class="come_back">
+        <a href="{{url_for('dency')}}"><img src="/static/images/sym/come_back_sym.png" alt="Come_Back" id="cBack"></a>
+    </div>
+    <div class="macro-piece">
+        <header>
+           <h1>Codice sorgente del secondo file JSON</h1>
+        </header>
+        <div class="precode">
+           <div class="code">
+               <pre id="show_sc2"></pre>
+           </div>
+        <div>
+            <p>Per modificare il file, basta copiare il codice sovrastante e incollarlo qui sotto</p>
+            <p>Una volta finita, cliccate Salva e si scaricherà il nuovo file json nella directory</p>
+        </div>
+        <div class="text">
+            <textarea id="content2"></textarea>
+            <button id="download-btn2">Salva</button>
+        </div>
+    </div>
+    <script src="/static/js/show_second_json_sc.js"></script>
+    <script src="/static/js/edit_second_json_sc.js"></script>
+</body>
