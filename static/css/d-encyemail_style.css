@@ -307,7 +307,11 @@ img:hover{
     height: auto;
 }
 
-.start{
-    
+.start #def_pp img{
+   width: 500px;
+   height: 500px;
+   position: relative;
+   right: 30%;
+   transform: translate(0);
 }
 
