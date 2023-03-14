@@ -299,15 +299,16 @@ img:hover{
     margin: 0 auto;
 }
 
-.definitions .start{
+/*CSS of After Title, Image, Intro, History*/
+
+.after_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: white;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    height: auto;
 }
 
-.start #def_pp img{
+.after_title #def_pp img{
    width: 500px;
    height: 500px;
    margin-top: 20px;
@@ -316,3 +317,19 @@ img:hover{
    transform: translate(0);
 }
 
+.after_title #def_prep{
+    border: 2px solid #5881D1;
+    border-radius: 15px;
+    width: 600px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.after_title #def_prep p{
+    width: 600px;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: lighter;
+ }
