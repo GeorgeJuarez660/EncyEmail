@@ -30,7 +30,7 @@ function show_definitions(ID){
 
                     photo_plot += `<img src="${element.img}" alt="${element.title}">`
 
-                    pre_plot += ``
+                    pre_plot += `<p>${element.intro}</p>`
 
                     history += ``
                 }
