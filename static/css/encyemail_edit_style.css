@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 body{
     background-image: url("/static/images/background/ency.png");
@@ -55,11 +56,14 @@ img:hover{
 
 div #show_sc{
     text-align: left;
+    width: 1000px;
+    font-family: 'Courier Prime', monospace;
 }
 
 div #show_sc2{
     text-align: left;
     width: 1000px;
+    font-family: 'Courier Prime', monospace;
 }
 
 .precode{
