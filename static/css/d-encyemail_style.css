@@ -335,5 +335,29 @@ img:hover{
 }
 
 .start #def_history{
-    
+    position: relative;
+    bottom: 24px;
+    background-color: white;
+}
+
+.start #def_history h3{
+    font-size: 24px;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: bold;
+}
+
+.start #def_history div{
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: lighter;
+    width: auto;
+}
+
+#def_history div p{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #5881D1;
+    border-radius: 15px;
+    width: 1300px;
 }
