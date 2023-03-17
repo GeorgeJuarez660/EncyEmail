@@ -33,7 +33,7 @@ function show_definitions(ID){
                     pre_plot += `<p>${element.intro}</p>`
 
                     history += `<h3>Storia</h3>
-                                <p></p>`
+                                <div><p>${element.history}</p></div>`
                 }
             }
 
